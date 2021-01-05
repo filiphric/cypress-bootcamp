@@ -1,0 +1,13 @@
+{
+  "baseUrl": "http://localhost:3000",
+  "env": {
+    "coverage": false,
+    "version": "local"
+  },
+  "ignoreTestFiles": [
+    "*.md",
+    "*.html"
+  ],
+  "pluginsFile": "cypress/plugins/index.ts",
+  "supportFile": "cypress/support/index.ts"
+}

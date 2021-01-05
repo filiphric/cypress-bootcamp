@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: #282a3a;
+        font-family: sans-serif;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 10% auto;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        height: 100vh;
+        color: aliceblue;
+      }
+      h1 {
+        margin: 30px;
+        grid-column-start: span 3;
+      }
+      div {
+        margin: 30px;
+        display: inline-block;
+        grid-column-start: span 3;
+      }
+      table, th, td {
+        border: 1px solid aliceblue;
+        border-collapse: collapse;
+        padding: 0.4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🍪 Cookies on this page:</h1>
+    <div id="cookieContainer"></code>
+  </body>
+  <script defer>
+    let str = document.cookie;
+    console.log(str)
+    const $ = document.querySelector.bind(document)
+
+    let arr = []
+
+    if (str.length) {
+      str = str.split('; ');
+      for (var i = 0; i < str.length; i++) {
+        arr.push(str[i].split('='))
+      }
+    }
+
+    function makeTableHTML(ar) {
+      return `
+      <table>
+        <tr>
+          <th>NAME</th>
+          <th>VALUE</th>
+        </tr>
+      ${ar.reduce((c, o) => c += `<tr>${o.reduce((c, d) => (c += `<td>${d}</td>`), '')}</tr>`, '')}
+      </table>`
+    }
+
+    $('#cookieContainer').innerHTML = `no cookies were found`
+    if (arr.length) $('#cookieContainer').innerHTML = `${makeTableHTML(arr)}`
+  </script>
+</html>
