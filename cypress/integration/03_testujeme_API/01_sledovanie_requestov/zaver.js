@@ -3,42 +3,11 @@
 beforeEach( () => {
 
   cy
-    .intercept('GET', '/api/boards')
-    .as('boardList')
-
-  cy
-    .intercept('GET', '/api/boards/*')
-    .as('board')
-
-  cy
     .intercept('POST', '/api/boards')
     .as('createBoard')
 
   cy
     .visit('/');
-
-});
-
-it('načítanie zoznamu boardov', () => {
-
-  cy
-    .wait('@boardList')
-
-  cy
-    .get('[data-cy=board-item]')
-    .should('have.length', 0)
-
-})
-
-it('otvorenie boardu', () => {
-
-  cy
-    .get('[data-cy=board-item]')
-    .eq(0)
-    .click();
-
-  cy
-    .wait('@board');
 
 });
 

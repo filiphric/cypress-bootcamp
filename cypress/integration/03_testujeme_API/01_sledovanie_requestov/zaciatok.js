@@ -7,23 +7,6 @@ beforeEach( () => {
 
 });
 
-it.only('načítanie zoznamu boardov', () => {
-
-  cy
-    .get('[data-cy=board-item]')
-    .should('have.length', 0)
-
-});
-
-it('otvorenie boardu', () => {
-
-  cy
-    .get('[data-cy=board-item]')
-    .eq(0)
-    .click();
-
-});
-
 it('vytvorenie nového boardu', () => {
 
   cy
