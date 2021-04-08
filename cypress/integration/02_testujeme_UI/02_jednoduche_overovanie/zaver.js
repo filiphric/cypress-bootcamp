@@ -21,7 +21,6 @@ it('vytvorenie tasku', () => {
     .get('[data-cy=task]')
     .should('be.visible')
 
-
 })
 
 it('overenie počtu taskov', () => {

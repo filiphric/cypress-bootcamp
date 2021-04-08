@@ -3,27 +3,27 @@
 beforeEach(() => {
 
   cy
-  .visit('/board/25619573353');
+    .visit('/board/25619573353');
 
 });
 
-it.only('list s názvom "kúpiť" sa nachádza v zozname', () => {
-
-  cy
-    .get('[data-cy="list-name"]')
-    .should('have.value', 'kúpiť');
-
-});
-
-it('task s textom „rožky“ je na prvej pozícii (riešenie 1)', () => {
+it.only('v zozname sa nachádzajú dva tasky', () => {
 
   cy
     .get('[data-cy="task"]')
-    .first()
-    .should('contain.text', 'rožky');
+    .should('have.length', 2);
 
 });
 
-it('task s textom „mlieko“ je na poslednej pozícii (riešenie 2)', () => {
+it('tasky majú správne texty', () => {
+
+  cy
+    .get('[data-cy="task"]')
+    .then( item => {
+
+      expect(item).to.contain.text('chlieb');
+      expect(item).to.contain.text('mlieko');
+
+    });
 
 });

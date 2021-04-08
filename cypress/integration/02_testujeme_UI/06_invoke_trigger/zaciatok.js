@@ -15,6 +15,15 @@ it('zobrazenie hviezdičky príkazom .invoke()', () => {
 
 })
 
+it('pridanie classy pomocou.invoke()', () => {
+
+  cy
+    .get('[data-cy=task]')
+    .invoke('addClass', 'overDue')
+
+})
+
+
 it('zobrazenie hviezdičky príkazom .trigger()', () => {
 
 

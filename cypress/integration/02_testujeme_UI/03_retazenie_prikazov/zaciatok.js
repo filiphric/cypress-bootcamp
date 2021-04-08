@@ -7,7 +7,10 @@ beforeEach( () => {
 
 });
 
-it('v zozname je mlieko', () => {
+it.only('v zozname je mlieko', () => {
+
+  cy
+    .contains('[data-cy=task]', 'mlieko')
 
 });
 

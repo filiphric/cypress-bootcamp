@@ -17,6 +17,16 @@ it('overenie textu prvého tasku', () => {
 
 it('overenie textov všetkých taskov', () => {
 
+  cy
+    .get('[data-cy=task]')
+    .eq(0)
+    .should('contain.text', 'mlieko')
+
+  cy
+    .get('[data-cy=task]')
+    .eq(1)
+    .should('contain.text', 'chlieb')
+
 });
 
 

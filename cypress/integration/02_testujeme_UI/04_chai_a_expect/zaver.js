@@ -10,9 +10,9 @@ beforeEach( () => {
 it('overenie textu prvého tasku', () => {
 
   cy
-    .get('[data-cy="task"]').then( items => {
+    .get('[data-cy="task"]').then( item => {
 
-      expect(items).to.contain.text('mlieko');
+      expect(item).to.contain.text('mlieko');
 
     });
 

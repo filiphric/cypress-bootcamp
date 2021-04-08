@@ -16,6 +16,10 @@ it('zobrazenie hviezdičky príkazom .invoke()', () => {
 
 })
 
+it('pridanie classy pomocou.invoke()', () => {
+
+})
+
 it('zobrazenie hviezdičky príkazom .trigger()', () => {
 
   cy

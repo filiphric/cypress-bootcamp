@@ -10,7 +10,7 @@ beforeEach( () => {
 it('v zozname je mlieko', () => {
 
   cy
-    .contains('mlieko')
+    .contains('[data-cy=task]', 'mlieko')
 
   cy
     .get('[data-cy=list]')
