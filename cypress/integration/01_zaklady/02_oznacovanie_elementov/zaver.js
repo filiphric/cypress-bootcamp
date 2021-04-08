@@ -16,18 +16,25 @@ it('class, id, attr', { baseUrl: "" }, () => {
 
 })
 
-it('nested classes', { baseUrl: "" }, () => {
+it('cypress príkazy', { baseUrl: "" }, () => {
 
   cy
-    .visit('./cypress/integration/01_zaklady/02_oznacovanie_elementov/pages/squares.html');
+    .visit('./cypress/integration/01_zaklady/02_oznacovanie_elementov/pages/rainbow.html');
 
   cy
-    .get('.green.circle'); // označ zelený kruh
+    .get('li')
+    .first()
 
   cy
-    .get('.green .circle'); // označ kruh, ktorý je vo vnútri niečoho zeleného
+    .get('li')
+    .eq(2)
 
   cy
-    .get('.green > .circle'); // označ kruh, ktorý je hneď prvá vec v niečom zelenom
+    .get('.list')
+    .find('.green')
 
-})
+  cy
+    .get('.violet')
+    .parent('.list')
+
+});

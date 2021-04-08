@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 // ⚠️ jednotlivé testy si môžeš vyfiltrovať tak, že prepíšeš "it" na "it.only"
-// úloha #1: označ štvorec pomocou classy, kruh pomocou idčka, trojuholník pomocou atribútu
+// úloha #1: označ štvorec pomocou classy, kruh pomocou idčka, trojuholník pomocou atribútu a nadpis pomocou textu
 it('class, id, attr', { baseUrl: "" }, () => {
 
   cy
@@ -10,20 +10,7 @@ it('class, id, attr', { baseUrl: "" }, () => {
 })
 
 /*
-úloha #2: podobne (alebo ináč) ako v demonštrácii, označ jediným selectorom:
-  1. iba prvý a tretí kruh
-  2. iba druhý a tretí kruh
-  3. iba druhý kruh
-*/
-it('nested classes', { baseUrl: "" }, () => {
-
-  cy
-    .visit('./cypress/integration/01_zaklady/02_oznacovanie_elementov/pages/squares.html');
-
-})
-
-/*
-  úloha #3: na stránke sa nachádza dúha. pozri do dokumentácie docs.cypress.io a označ
+  úloha #2: na stránke sa nachádza dúha. pozri do dokumentácie docs.cypress.io a označ
   elementy na stránke podľa inštrukcii. Tvojou úlohou bude doplniť správny príkaz
   za príkaz .get(), teda napr.:
 
@@ -76,3 +63,16 @@ it('advanced selecting', { baseUrl: "" }, () => {
     .get('.violet')
 
 });
+
+/*
+úloha #3: označ pomocou classy jediným .get() príkazom:
+  1. iba prvý a tretí kruh
+  2. iba druhý a tretí kruh
+  3. iba druhý kruh
+*/
+it('nested classes', { baseUrl: "" }, () => {
+
+  cy
+    .visit('./cypress/integration/01_zaklady/02_oznacovanie_elementov/pages/squares.html');
+
+})
