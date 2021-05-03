@@ -8,20 +8,23 @@ beforeEach(() => {
 
 });
 
-// úloha #1: pomocou príkazu .invoke() zobraz api tooly
+// úloha #1: vyskúšaj si zobraziť hviezdičku na boarde pomocou príkazu .invoke()
+it('zobrazenie hviezdičky príkazom .invoke()', () => {
+
+  cy
+    .get('[data-cy="star"]')
+
+})
+
+// úloha #2: vyskúšaj pridať classu overDue na task v boarde
+it('pridanie classy pomocou .invoke()', () => {
+
+})
+
+// úloha #3: pomocou príkazu .invoke() zobraz api tooly
 it('zobrazenie api toolov', () => {
 
   cy
     .get('#tools')
-
-});
-
-// úloha #2: otvor si zoznam boardov a pomocou príkazu .trigger() zobraziť input
-// na zadanie názvu nového boardu. potom skús podobnú akciu urobiť pomocou príkazu
-// .invoke() a porovnaj si, v čom sa akcie líšia
-it('zobrazenie inputu na vytvorenie nového boardu', () => {
-
-  cy
-    .get('[data-cy=create-board]')
 
 });

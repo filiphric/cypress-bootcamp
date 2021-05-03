@@ -7,19 +7,6 @@ beforeEach(() => {
 
 });
 
-it('zobrazenie hviezdičky príkazom .invoke()', () => {
-
-  cy
-    .get('[data-cy="star"]')
-    .invoke('show')
-    .click();
-
-})
-
-it('pridanie classy pomocou.invoke()', () => {
-
-})
-
 it('zobrazenie hviezdičky príkazom .trigger()', () => {
 
   cy
@@ -31,4 +18,23 @@ it('zobrazenie hviezdičky príkazom .trigger()', () => {
     .click();
 
 })
+
+it('zobrazenie hviezdičky príkazom .invoke()', () => {
+
+  cy
+    .get('[data-cy="star"]')
+    .invoke('show')
+    .click();
+
+})
+
+it('pridanie classy pomocou.invoke()', () => {
+
+  cy
+    .get('[data-cy=task]')
+    .invoke('addClass', 'overDue')
+
+})
+
+
 
