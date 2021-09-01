@@ -3,15 +3,15 @@
 beforeEach( () => {
 
   cy
-    .visit('/board/25619573353')
+    .visit('/board/66719849538')
 
 })
 
-it('vytvorenie tasku', () => {
+it('vytvorenie karty', () => {
 
 })
 
-it('overenie počtu taskov', () => {
+it('overenie počtu kariet', () => {
 
 })
 
