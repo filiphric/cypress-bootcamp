@@ -15,18 +15,14 @@ it('chybova hláška pri vytvorení boardu', () => {
 
   cy
     .get('[data-cy=new-board-input]')
-    .type('nova zahrada')
+    .type('nova zahrada{enter}')
 
   cy
-    .contains('Save')
-    .click()
-
-  cy
-    .get('#errorMessage')
+    .get('[data-cy="notification-message"]')
     .should('be.visible')
 
   cy
-    .get('#errorMessage')
-    .should('not.be.visible')
+    .get('[data-cy="notification-message"]')
+    .should('not.exist')
 
 })

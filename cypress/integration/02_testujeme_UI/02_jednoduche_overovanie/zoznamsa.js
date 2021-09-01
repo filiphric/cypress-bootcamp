@@ -22,7 +22,7 @@ it('odstránenie listu', () => {
 
 })
 
-// úloha #4: začni test s jednou kartou v zozname, pomocou testu ho zaškrtni a over si, že je task aj naozaj zaškrtnutý
+// úloha #4: začni test s jednou kartou v zozname, pomocou testu ho zaškrtni a over si, že je karta aj naozaj zaškrtnutá
 it('overenie odškrtnutia', () => {
 
 })
