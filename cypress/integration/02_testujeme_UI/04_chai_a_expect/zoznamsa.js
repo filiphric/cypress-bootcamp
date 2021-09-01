@@ -7,14 +7,14 @@ beforeEach( () => {
 
 });
 
-// ⚠️ pred spustením testov si vytvor napr. štyri tasky
+// ⚠️ pred spustením testov si vytvor napr. štyri karty
 
-// úloha #1: over všetky text taskov pomocou príkazu .then()
-it('texty taskov', () => {
+// úloha #1: over všetky texty kariet pomocou príkazu .then()
+it('texty kariet', () => {
 
 })
 
-// úloha #2: zaškrtni niektoré z taskov a pomocou príkazu .then a funkcie expect over zaškrtnutie taskov
-it('zaškrtnutie taskov', () => {
+// úloha #2: zaškrtni niektoré karty a pomocou príkazu .then a funkcie expect() over ich zaškrtnutie
+it('zaškrtnutie kariet', () => {
 
 });
