@@ -3,22 +3,22 @@
 beforeEach(() => {
 
   cy
-    .visit('/board/25619573353');
+    .visit('/board/49681072063');
 
 });
 
-it.only('v zozname sa nachádzajú dva tasky', () => {
+it.only('v zozname sa nachádzajú dve karty', () => {
 
   cy
-    .get('[data-cy="task"]')
+    .get('[data-cy="card"]')
     .should('have.length', 2);
 
 });
 
-it('tasky majú správne texty', () => {
+it('karty majú správne texty', () => {
 
   cy
-    .get('[data-cy="task"]')
+    .get('[data-cy="card"]')
     .then( item => {
 
       expect(item).to.contain.text('chlieb');
