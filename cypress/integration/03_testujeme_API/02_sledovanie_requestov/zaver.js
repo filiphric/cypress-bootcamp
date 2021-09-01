@@ -25,6 +25,8 @@ it('vytvorenie nového boardu', () => {
   cy
     .intercept('POST', '/api/boards')
     .as('createBoard')
+    .intercept('GET', '/api/lists?boardId=*')
+    .as('boardLists')
 
   cy
     .visit('/');
@@ -48,5 +50,8 @@ it('vytvorenie nového boardu', () => {
       assert.isNumber(board.response.body.id)
 
     })
+
+  cy
+    .wait('@boardLists')
 
 });

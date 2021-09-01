@@ -3,15 +3,7 @@
 it('prihlásenie do aplikácie', () => {
 
   cy
-    .visit('/')
-
-  cy
-    .get('[data-cy="login-menu"]')
-    .click();
-
-  cy
-    .get('[data-cy="login-module"]')
-    .should('be.visible');
+    .visit('/login')
 
   cy
     .get('[data-cy="login-email"]')
@@ -22,7 +14,7 @@ it('prihlásenie do aplikácie', () => {
     .type('nbusr123');
 
   cy
-    .get('[data-cy="login"]')
+    .get('[data-cy="login-submit"]')
     .click();
 
 });

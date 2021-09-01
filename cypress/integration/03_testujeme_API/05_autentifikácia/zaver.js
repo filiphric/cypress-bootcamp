@@ -5,16 +5,16 @@ it('prihlásenie do aplikácie', () => {
   cy
     .request({
       method: 'POST',
-      url: '/login',
+      url: '/api/login',
       body: {
         email: "",
         password: ""
       }
     })
-    .then( () => {
+    .then( ({ body }) => {
       
       cy
-        .setCookie('trello_token', '--- token here ---')
+        .setCookie('trello_token', body.accessToken)
 
     })
 
