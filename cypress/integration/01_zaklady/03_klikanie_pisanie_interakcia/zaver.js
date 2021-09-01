@@ -26,13 +26,13 @@ it('označenie boardu hviezdičkou', () => {
 
 });
 
-it('označenie tasku', () => {
+it('zaškrtnutie karty', () => {
 
   cy
-    .visit('/board/3404110071');
+    .visit('/board/33255693826');
 
   cy
-    .get('[data-cy="task-done"]')
+    .get('[data-cy=card-checkbox]')
     .check();
 
 });
