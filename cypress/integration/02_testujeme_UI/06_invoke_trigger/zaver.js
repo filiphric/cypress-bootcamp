@@ -1,13 +1,9 @@
 /// <reference types="cypress" />
 
-beforeEach(() => {
+it('zobrazenie hviezdičky príkazom .trigger()', () => {
 
   cy
     .visit('/');
-
-});
-
-it('zobrazenie hviezdičky príkazom .trigger()', () => {
 
   cy
     .get('[data-cy="board-item"]')
@@ -22,17 +18,23 @@ it('zobrazenie hviezdičky príkazom .trigger()', () => {
 it('zobrazenie hviezdičky príkazom .invoke()', () => {
 
   cy
+    .visit('/');
+
+  cy
     .get('[data-cy="star"]')
     .invoke('show')
     .click();
 
 })
 
-it('pridanie classy pomocou.invoke()', () => {
+it.only('pridanie classy pomocou .invoke()', () => {
 
   cy
-    .get('[data-cy=task]')
-    .invoke('addClass', 'overDue')
+    .visit('/board/49681072063');
+
+  cy
+    .get('[data-cy=card-date]')
+    .invoke('addClass', 'overdue')
 
 })
 
