@@ -7,6 +7,17 @@ beforeEach( () => {
 
 });
 
+it('prázdny zoznam boardov', () => {
+
+  cy
+    .visit('/');
+
+  cy
+    .get('[data-cy=board-item]')
+    .should('not.exist')
+
+})
+
 it('vytvorenie nového boardu', () => {
 
   cy
@@ -15,10 +26,6 @@ it('vytvorenie nového boardu', () => {
 
   cy
     .get('[data-cy=new-board-input]')
-    .type('nova zahrada')
-
-  cy
-    .contains('Save')
-    .click()
+    .type('nova zahrada{enter}')
 
 });

@@ -7,9 +7,9 @@ beforeEach( () => {
 
 });
 
-it('vytvorenie tasku', () => {
+it('vytvorenie karty', () => {
 
-  // úloha #1: vytvor si v teste nový task v zozname a odsleduj si request, ktorý sa udeje pri jeho vytvorení.
+  // úloha #1: vytvor si v teste novú kartu v zozname a odsleduj si request, ktorý sa udeje pri jeho vytvorení.
   // pomocou príkazov .its() a .should() si otestuj status alebo telo odpovede requestu
 
 })
@@ -21,9 +21,9 @@ it('odstránenie zoznamu', () => {
 
 })
 
-it('zaškrtnutie tasku', () => {
+it('zaškrtnutie karty', () => {
 
-  // úloha #3: pomocou testu si zaškrtni task v zozname a odsleduj si request,
+  // úloha #3: pomocou testu si zaškrtni kartu v zozname a odsleduj si request,
   // ktorý sa pri tejto akcii odpaľuje. skús si vytvoriť aj zopár testov pre tento request.
   // skús na overenie spoužiť príkaz .then() skontroluj napríklad status kód a telo requestu
 

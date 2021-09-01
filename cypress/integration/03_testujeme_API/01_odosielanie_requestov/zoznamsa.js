@@ -16,8 +16,8 @@ it('vytvorenie listu cez api', () => {
 
 })
 
-// úloha #3: vytvor si task cez api
-it('vytvorenie tasku cez api', () => {
+// úloha #3: vytvor si kartu cez api
+it('vytvorenie karty cez api', () => {
 
   cy
     .visit() // pridaj si adresu svojho boardu

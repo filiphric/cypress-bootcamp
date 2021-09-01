@@ -1,6 +1,26 @@
 /// <reference types="cypress" />
 
-beforeEach( () => {
+it('prázdny zoznam boardov', () => {
+
+  cy
+    .intercept('GET', '/api/boards')
+    .as('boardList')
+
+  cy
+    .visit('/');
+
+  cy
+    .wait('@boardList')
+    .its('response.status')
+    .should('eq', 200)
+
+  cy
+    .get('[data-cy=board-item]')
+    .should('not.exist')
+
+})
+
+it('vytvorenie nového boardu', () => {
 
   cy
     .intercept('POST', '/api/boards')
@@ -9,21 +29,13 @@ beforeEach( () => {
   cy
     .visit('/');
 
-});
-
-it('vytvorenie nového boardu', () => {
-
   cy
     .get('[data-cy=create-board]')
     .click()
 
   cy
     .get('[data-cy=new-board-input]')
-    .type('nova zahrada')
-
-  cy
-    .contains('Save')
-    .click()
+    .type('nova zahrada{enter}')
 
   cy
     .wait('@createBoard').then( board => {
