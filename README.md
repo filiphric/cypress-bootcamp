@@ -24,19 +24,19 @@ Databázou je obyčajný json súbor, nachádzajúci sa v `trelloapp/public/data
 - tieto endpointy nevyžadujú autorizáciu
 ---
 #### POST /reset
-Odstráni všetky boardy, listy, tasky a userov
+Odstráni všetky boardy, listy, karty a userov
 
 ---
 #### DELETE /boards
-Odstráni všetky boardy, zoznamy a tasky
+Odstráni všetky boardy, zoznamy a karty
 
 ---
 #### DELETE /lists
-Odstráni všetky zoznamy a tasky
+Odstráni všetky zoznamy a karty
 
 ---
-#### DELETE /tasks
-Odstráni všetky tasky
+#### DELETE /cards
+Odstráni všetky karty
 
 ---
 #### DELETE /users
@@ -111,12 +111,12 @@ Vytvorí nový board
   "starred": false,
   "created": "2020-09-01",
   "lists": [],
-  "tasks": []
+  "cards": []
 }
 ```
 ---
 #### GET /boards/{boardId}
-Vráti detaily boardu s id `{boardId}` spolu s priradenými listami a taskami
+Vráti detaily boardu s id `{boardId}`
 ##### príklad API odpovede (neautorizovaný user):
 ```json
 {
@@ -124,27 +124,7 @@ Vráti detaily boardu s id `{boardId}` spolu s priradenými listami a taskami
   "user": 0,
   "id": 27315982008,
   "starred": false,
-  "created": "2020-09-01",
-  "lists": [
-    {
-      "boardId": 27315982008,
-      "title": "todo list",
-      "id": 2576814910,
-      "created": "2020-09-01"
-    }
-  ],
-  "tasks": [
-    {
-      "boardId": 27315982008,
-      "description": "",
-      "completed": false,
-      "listId": 2576814910,
-      "title": "Buy milk",
-      "id": 3403093058,
-      "created": "2020-09-01",
-      "deadline": "2020-09-04"
-    }
-  ]
+  "created": "2020-09-01"
 }
 ```
 ---
@@ -186,8 +166,8 @@ Upraví list s ID `{listId}`
 Odstráni list s ID `{listId}`
 
 ---
-#### POST /tasks
-Vytvorí nový task
+#### POST /cards
+Vytvorí novú kartu
 ##### príklad tela API volania
 ```json
 {
@@ -198,8 +178,8 @@ Vytvorí nový task
 
 ```
 ---
-#### PATCH /tasks/{taskId}
-Upraví task s ID `{taskId}`
+#### PATCH /cards/{cardId}
+Upraví kartu s ID `{cardId}`
 ##### príklad tela API volania
 ```json
 {
@@ -208,8 +188,8 @@ Upraví task s ID `{taskId}`
 
 ```
 ---
-#### DELETE /tasks/{taskId}
-Odstráni task s ID `{taskId}`
+#### DELETE /cards/{cardId}
+Odstráni kartu s ID `{cardId}`
 
 ---
 #### GET /users
