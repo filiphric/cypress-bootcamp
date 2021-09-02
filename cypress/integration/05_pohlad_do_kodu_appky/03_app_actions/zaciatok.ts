@@ -5,8 +5,8 @@ it('page action', () => {
 
   cy
     .window()
-    .then(({ app }) => {
-      console.log(app);
+    .then(({ store }) => {
+      console.log(store());
     });
 
 });

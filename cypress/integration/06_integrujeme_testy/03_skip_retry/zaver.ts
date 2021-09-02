@@ -28,7 +28,7 @@ describe('nestabilný test', () => {
   beforeEach(() => {
 
     cy
-      .request('POST', '/reset');
+      .request('POST', '/api/reset');
 
   })
 

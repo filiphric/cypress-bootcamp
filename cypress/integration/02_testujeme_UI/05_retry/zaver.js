@@ -7,18 +7,18 @@ beforeEach(() => {
 
 });
 
-it('v zozname sa nachádzajú dva tasky', () => {
+it('v zozname sa nachádzajú dve karty', () => {
 
   cy
-    .get('[data-cy="task"]', { timeout: 30000 })
+    .get('[data-cy="card"]', { timeout: 30000 })
     .should('have.length', 2);
 
 });
 
-it.only('tasky majú správne texty', () => {
+it.only('karty majú správne texty', () => {
 
   cy
-    .get('[data-cy="task"]')
+    .get('[data-cy="card"]')
     .should( item => {
 
       expect(item).to.contain.text('chlieb');

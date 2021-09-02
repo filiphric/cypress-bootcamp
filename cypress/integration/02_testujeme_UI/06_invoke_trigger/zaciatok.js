@@ -1,19 +1,16 @@
 /// <reference types="cypress" />
 
-beforeEach(() => {
+it.only('zobrazenie hviezdičky príkazom .trigger()', () => {
 
   cy
     .visit('/');
 
-});
-
-it('zobrazenie hviezdičky príkazom .trigger()', () => {
-
-
-
 })
 
 it('zobrazenie hviezdičky príkazom .invoke()', () => {
+
+  cy
+    .visit('/');
 
   cy
     .get('[data-cy="star"]')
@@ -21,7 +18,7 @@ it('zobrazenie hviezdičky príkazom .invoke()', () => {
 
 })
 
-it('pridanie classy pomocou.invoke()', () => {
+it('pridanie classy pomocou .invoke()', () => {
 
   
 

@@ -22,10 +22,6 @@ it('chybova hláška pri vytvorení boardu', () => {
 
   cy
     .get('[data-cy=new-board-input]')
-    .type('nova zahrada')
-
-  cy
-    .contains('Save')
-    .click()
+    .type('nova zahrada{enter}')
 
 })

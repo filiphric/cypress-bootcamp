@@ -10,7 +10,7 @@ it('označenie boardu hviezdičkou', () => {
 
 });
 
-it('označenie tasku', () => {
+it('zaškrtnutie karty', () => {
 
 
 

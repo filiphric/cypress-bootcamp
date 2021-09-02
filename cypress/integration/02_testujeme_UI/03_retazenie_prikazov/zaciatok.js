@@ -10,7 +10,7 @@ beforeEach( () => {
 it.only('v zozname je mlieko', () => {
 
   cy
-    .contains('[data-cy=task]', 'mlieko')
+    .contains('[data-cy=card]', 'mlieko')
 
 });
 

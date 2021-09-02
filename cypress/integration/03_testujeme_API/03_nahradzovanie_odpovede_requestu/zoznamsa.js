@@ -19,11 +19,11 @@ it('žiaden board v zozname', () => {
 
 })
 
-it('chyba pri vytvoreni tasku', () => {
+it('chyba pri vytvoreni karty', () => {
 
   cy
     .visit('/');
 
-  // pridaj si ďalší .intercept() atribút, pomocou ktorého vyvoláš chybu pri vytvorení tasku
+  // pridaj si ďalší .intercept() atribút, pomocou ktorého vyvoláš chybu pri vytvorení karty
 
 })

@@ -4,5 +4,5 @@
 - vyskúšaj si reťazenie príkazov. skús vytvoriť reťaz s piatimi príkazmi a sleduj, ako si medzi sebou jednotlivé príkazy podávajú informácie
 - precvič si použitie príkazu .then()
 - pomocou dokumentácie skús nájsť taký príkaz, ktorý nerobí retry (kopec takýchto príkazov sme už použili!)
-- vyskúšaj si test v kapitole `05_retry`, pri ktorom počas testu prehodíš poradie taskov (využi na to timeout a should)
+- vyskúšaj si test v kapitole `05_retry`, pri ktorom počas testu prehodíš poradie kariet (využi na to timeout a should)
 - nájdi si nejaké ďalšie event listenery v aplikácii a pokús sa ich vyvolať pomocou príkazu trigger

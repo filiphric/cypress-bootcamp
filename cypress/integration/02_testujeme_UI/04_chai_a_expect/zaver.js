@@ -3,29 +3,29 @@
 beforeEach( () => {
 
   cy
-    .visit('/board/25619573353');
+    .visit('/board/49681072063');
 
 });
 
-it('overenie textu prvého tasku', () => {
+it('overenie textu prvej karty', () => {
 
   cy
-    .get('[data-cy="task"]').then( item => {
+    .get('[data-cy="card-title"]').then( item => {
 
-      expect(item).to.contain.text('mlieko');
+      expect(item).to.have.text('mlieko');
 
     });
 
 });
 
-it('overenie textov všetkých taskov', () => {
+it('overenie textov všetkých kariet', () => {
 
   cy
-    .get('[data-cy="task"]')
+    .get('[data-cy="card-title"]')
     .then( items => {
 
-      expect(items[0]).to.contain.text('mlieko');
-      expect(items[1]).to.contain.text('chlieb');
+      expect(items[0]).to.have.text('mlieko');
+      expect(items[1]).to.have.text('chlieb');
 
     });
 

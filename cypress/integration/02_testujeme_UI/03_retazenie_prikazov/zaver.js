@@ -10,7 +10,7 @@ beforeEach( () => {
 it('v zozname je mlieko', () => {
 
   cy
-    .contains('[data-cy=task]', 'mlieko')
+    .contains('[data-cy=card]', 'mlieko')
 
   cy
     .get('[data-cy=list]')
@@ -24,7 +24,7 @@ it('v druhom zozname je mlieko', () => {
   cy
     .get('[data-cy=list]')
     .eq(1)
-    .find('[data-cy=task]')
+    .find('[data-cy=card]')
     .eq(1)
     .should('contain.text', 'mlieko')
 

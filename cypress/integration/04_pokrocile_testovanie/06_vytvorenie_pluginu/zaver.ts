@@ -6,7 +6,7 @@ const dbState = {
     "starred": false,
     "user": 0
   }],
-  "tasks": [],
+  "cards": [],
   "users": [],
   "lists": []
 }

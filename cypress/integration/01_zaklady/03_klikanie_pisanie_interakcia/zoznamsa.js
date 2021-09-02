@@ -14,23 +14,23 @@ it('vytvorenie nového zoznamu', () => {
 
 });
 
-// úloha #2: vytvor si nový task v zozname
-it('vytvorenie nového tasku', () => {
+// úloha #2: vytvor si novú kartu v zozname
+it('vytvorenie novej karty', () => {
 
 
 
 });
 
-// úloha #3: zaškrtni task ako vybavený
-it('označenie tasku', () => {
+// úloha #3: zaškrtni kartu v zozname
+it('zaškrtnutie karty', () => {
 
 
 
 });
 
-// úloha #4: odškrtni task ako nevybavený
-it('odznačenie tasku', () => {
+// úloha #4: odškrtni kartu v zozname
+it('odškrtnutie karty', () => {
 
-
+  
 
 });

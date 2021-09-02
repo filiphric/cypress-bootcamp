@@ -3,38 +3,38 @@
 beforeEach( () => {
 
   cy
-    .visit('/board/25619573353')
+    .visit('/board/66719849538')
 
 })
 
-it('vytvorenie tasku', () => {
+it('vytvorenie karty', () => {
 
   cy
-    .contains('Add new task')
+    .contains('Add another card')
     .click();
 
   cy
-    .get('[data-cy=task-input]')
+    .get('[data-cy=new-card-input]')
     .type('buy milk{enter}')
 
   cy
-    .get('[data-cy=task]')
+    .get('[data-cy=card]')
     .should('be.visible')
 
 })
 
-it('overenie počtu taskov', () => {
+it('overenie počtu kariet', () => {
 
   cy
-    .contains('Add new task')
+    .contains('Add another card')
     .click();
 
   cy
-  .get('[data-cy=task-input]')
+  .get('[data-cy=new-card-input]')
     .type('wash dishes{enter}')
 
   cy
-    .get('[data-cy=task]')
+    .get('[data-cy=card]')
     .should('have.length', 2)
 
 })
@@ -42,15 +42,15 @@ it('overenie počtu taskov', () => {
 it('overenie zaškrtnutia', () => {
 
   cy
-    .get('[data-cy=task-done]')
+    .get('[data-cy=card-checkbox]')
     .check()
 
   cy
-    .get('[data-cy=task-title]')
+    .get('[data-cy=card-date]')
     .should('have.class', 'completed')
 
   cy
-    .get('[data-cy=task-done]')
+    .get('[data-cy=card-checkbox]')
     .should('be.checked')
 
 })

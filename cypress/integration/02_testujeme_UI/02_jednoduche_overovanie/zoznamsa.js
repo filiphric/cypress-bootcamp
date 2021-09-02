@@ -22,7 +22,7 @@ it('odstránenie listu', () => {
 
 })
 
-// úloha #4: začni test s jedným taskom v aplikácii, pomocou testu ho zaškrtni a over si, že je task aj naozaj zaškrtnutý
+// úloha #4: začni test s jednou kartou v zozname, pomocou testu ho zaškrtni a over si, že je karta aj naozaj zaškrtnutá
 it('overenie odškrtnutia', () => {
 
 })
@@ -32,7 +32,7 @@ it('overenie názvu listu', () => {
 
 })
 
-// úloha #6: vytvor si nový task a over si jeho text
-it('overenie textu na pridanie tasku (add new task)', () => {
+// úloha #6: vytvor si novú kartu a over si jej text
+it('overenie textu pridanej karty', () => {
 
 })

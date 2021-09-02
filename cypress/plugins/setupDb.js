@@ -4,7 +4,7 @@ const dbPath = path.resolve('./trelloapp/public/data/data.json')
 
 const empty = {
   "boards": [],
-  "tasks": [],
+  "cards": [],
   "users": [],
   "lists": []
 }
