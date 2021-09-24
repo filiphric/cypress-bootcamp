@@ -1,6 +1,6 @@
 const { setupDb } = require('./setupDb.js')
 
-module.exports = (on: Cypress.PluginEvents, config: Cypress.PluginConfigOptions) => {
+module.exports = (on, config) => {
 
   on('task', {
     setupDb: setupDb
