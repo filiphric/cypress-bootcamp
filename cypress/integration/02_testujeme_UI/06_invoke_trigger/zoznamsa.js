@@ -1,13 +1,12 @@
 /// <reference types="cypress" />
 
-beforeEach(() => {
+// úloha #1: pokús sa podobne ako v príklade pridať classu na element
+// zobrazujúci dátum na karte. tentokrát však skús pridať classu .completed
+it('vyvolanie "completed" stavu na karte', () => {
 
-  cy
-    .visit('/')
+})
 
-});
-
-// úloha #1: pomocou príkazu .invoke() zobraz api tooly
+// úloha #2: pomocou príkazu .invoke() zobraz api tooly
 it('zobrazenie api toolov', () => {
 
   cy
@@ -15,10 +14,20 @@ it('zobrazenie api toolov', () => {
 
 });
 
-// úloha #2: otvor si zoznam boardov a pomocou príkazu .trigger() zobraziť input
-// na zadanie názvu nového boardu. potom skús podobnú akciu urobiť pomocou príkazu
-// .invoke() a porovnaj si, v čom sa akcie líšia
-it('zobrazenie inputu na vytvorenie nového boardu', () => {
+// úloha #3: pomocou príkazu .invoke('val', 'hodnota') je možné zmeniť
+// hodnotu input fieldu. otvor si detail karty a zmeň jej názov pomocou 
+// tohto príkazu. názov sa mení kliknutím na názov karty
+it('zmena názvu karty #1', () => {
 
+  cy
+    .get('[data-cy=card-detail-title]')
+
+});
+
+// úloha #4: v predošlom príklade sa Ti podarilo zmeniť názov karty.
+// keď však kartu zavrieš, môžeš si všimnúť, že názov ostal nezmenený
+// na túto zmenu, potrebuješ vyvolať zmenu na inpute. vyvolaj ju pomocou 
+// príkazu .trigger('change')
+it('zmena názvu karty #2', () => {
 
 });
