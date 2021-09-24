@@ -19,10 +19,10 @@ it('karty majú správne texty', () => {
 
   cy
     .get('[data-cy="card"]')
-    .then( item => {
+    .then( items => {
 
-      expect(item).to.contain.text('chlieb');
-      expect(item).to.contain.text('mlieko');
+      expect(items[0]).to.contain.text('chlieb');
+      expect(items[1]).to.contain.text('mlieko');
 
     });
 

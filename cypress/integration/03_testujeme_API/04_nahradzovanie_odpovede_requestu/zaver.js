@@ -13,7 +13,7 @@ it('prázdny zoznam boardov', () => {
 
 })
 
-it.only('chybova hláška pri vytvorení boardu', () => {
+it('chybová hláška pri vytvorení boardu', () => {
 
   cy
     .intercept('POST', '/api/boards', {
@@ -41,3 +41,23 @@ it.only('chybova hláška pri vytvorení boardu', () => {
     .should('not.exist')
 
 })
+
+it.only('dynamické nahradzovanie odpovedí', () => {
+
+  cy
+    .intercept({
+      method: 'GET',
+      url: '/api/boards'
+    }, (req) => {
+      req.reply(res => {
+
+        res.body[0].starred = true
+        return res
+
+      })
+    }).as('boards')
+
+  cy
+    .visit('/')
+  
+});
