@@ -34,3 +34,20 @@ it('odškrtnutie karty', () => {
   
 
 });
+
+// úloha #5: otvor si board a klikni na jeho názov. nájdi v dokumentácii 
+// príkaz, pomocou ktorého vymažeš textové pole obsahujúce názov boardu
+it('vymazanie inputu', () => {
+
+  
+
+});
+
+// úloha #6: podobne ako v úlohe #5, budeme pracovať s textovým poľom,
+// v ktorom sa nachádza názov boardu. toto pole má dva stavy - focus a blur
+// nájdi v dokumentácii príkazy, pomocou ktorých tieto dva stavy vyvoláš
+it('označenie inputu na zmenu názvu boardu', () => {
+
+
+
+})

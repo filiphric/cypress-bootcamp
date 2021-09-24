@@ -36,3 +36,13 @@ it('overenie názvu listu', () => {
 it('overenie textu pridanej karty', () => {
 
 })
+
+// úloha #7: klikni na vytvorenú kartu a over si, že sa zobrazil detail karty
+it('overenie otvorenia detailu karty', () => {
+
+})
+
+// úloha #8: otvor si vytvorenú kartu a zavri ju. over si zmiznutie detailu karty
+it('overenie zatvorenia detailu karty', () => {
+
+})
