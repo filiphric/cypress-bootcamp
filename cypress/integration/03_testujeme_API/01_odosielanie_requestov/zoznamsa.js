@@ -25,18 +25,13 @@ it('premenovanie boardu cez api', () => {
 
 })
 
-// úloha #6: vytvor si pomocou api novú kartu
-it('vytvorenie karty cez api', () => {
-
-})
-
-// úloha #7: podobne ako pri použití api nástrojov (F2), skús 
+// úloha #6: podobne ako pri použití api nástrojov (F2), skús 
 // pomocou requestz vymazať celú databázu
 it('reset databázy cez api', () => {
 
 })
 
-// úloha #8: skús tentokrát vymazať iba všetky boardy
+// úloha #7: skús tentokrát vymazať iba všetky boardy
 it('vymazanie boardov cez api', () => {
 
 })
