@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-it('otvorenie vytvoreného boardu', () => {
+it('otvorenie vytvoreného boardu', function() {
 
   cy
     .request({

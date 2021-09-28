@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-beforeEach( () => {
+beforeEach( function() {
 
   cy
     .request({
