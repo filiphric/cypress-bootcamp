@@ -1,5 +1,5 @@
-// úloha #1: vytvor si vlastný custom command pre vytvorenie boardu
-it('vytvorenie boardu', () => {
+// úloha #1: vytvor si vlastný custom command pre vytvorenie zoznamu v boarde
+it('vytvorenie zoznamu v boarde', () => {
 
 });
 

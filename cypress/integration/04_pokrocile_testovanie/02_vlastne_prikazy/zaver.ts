@@ -4,11 +4,6 @@ it('vytvorenie nového boardu', () => {
     .visit('/');
 
   cy
-    .getByCy('create-board')
-    .click();
-
-  cy
-    .getByCy('new-board-input')
-    .type('new board{enter}');
+    .addBoard('new board')
 
 });
