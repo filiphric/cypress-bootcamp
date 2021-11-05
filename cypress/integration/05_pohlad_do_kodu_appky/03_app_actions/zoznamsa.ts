@@ -4,8 +4,4 @@ it('otvorenie api nástrojov', () => {
   cy
     .visit('/')
 
-  cy.window().invoke('store').then( (store) => {
-    store.showTools = true;
-  })
-
 });
