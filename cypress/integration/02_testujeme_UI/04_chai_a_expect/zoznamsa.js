@@ -28,8 +28,3 @@ it('počet zoznamov', () => {
 it('viditeľnosť zoznamov', () => {
   
 })
-
-// úloha #5: over si texty všetkých zoznamov. skús na ich overenie použť javascriptovskú funkciu forEach
-it('overenie textov zoznamov', () => {
-
-})
