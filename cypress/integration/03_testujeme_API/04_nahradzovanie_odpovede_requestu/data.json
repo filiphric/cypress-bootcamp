@@ -1,0 +1,22 @@
+{
+  "boards": [
+    {
+      "name": "new board",
+      "user": 0,
+      "id": 81987167479,
+      "starred": false,
+      "created": "2021-11-16"
+    }
+  ],
+  "cards": [],
+  "lists": [
+    {
+      "boardId": 81987167479,
+      "name": "nový zoznam",
+      "order": 0,
+      "id": 84114119572,
+      "created": "2021-11-16"
+    }
+  ],
+  "users": []
+}
