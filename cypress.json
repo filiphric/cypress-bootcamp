@@ -6,6 +6,7 @@
   },
   "ignoreTestFiles": [
     "*.md",
-    "*.html"
+    "*.html",
+    "*.json"
   ]
 }
