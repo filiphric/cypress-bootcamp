@@ -21,7 +21,7 @@ it('premenovanie boardu cez api', () => {
 })
 
 // úloha #5: vymaž board pomocou api
-it('premenovanie boardu cez api', () => {
+it('vymazanie boardu cez api', () => {
 
 })
 
