@@ -1,0 +1,74 @@
+{
+  "boards": [
+    {
+      "name": "new board",
+      "user": 0,
+      "id": 81987167479,
+      "starred": false,
+      "created": "2021-11-16"
+    }
+  ],
+  "cards": [
+    {
+      "order": 0,
+      "boardId": 81987167479,
+      "listId": 47584452074,
+      "name": "karta 1",
+      "id": 5496622958,
+      "created": "2021-11-16",
+      "deadline": "2021-11-19",
+      "description": "",
+      "completed": false
+    },
+    {
+      "order": 1,
+      "boardId": 81987167479,
+      "listId": 47584452074,
+      "name": "karta 2",
+      "id": 66461277175,
+      "created": "2021-11-16",
+      "deadline": "2021-11-19",
+      "description": "",
+      "completed": true
+    },
+    {
+      "order": 2,
+      "boardId": 81987167479,
+      "listId": 47584452074,
+      "name": "karta 3",
+      "id": 23512097864,
+      "created": "2021-11-16",
+      "deadline": "2021-11-19",
+      "description": "",
+      "completed": false
+    },
+    {
+      "order": 3,
+      "boardId": 81987167479,
+      "listId": 47584452074,
+      "name": "karta 4",
+      "id": 70622726601,
+      "created": "2021-11-16",
+      "deadline": "2021-11-19",
+      "description": "",
+      "completed": true
+    }
+  ],
+  "lists": [
+    {
+      "boardId": 81987167479,
+      "name": "zoznam 1",
+      "order": 0,
+      "id": 47584452074,
+      "created": "2021-11-16"
+    },
+    {
+      "boardId": 81987167479,
+      "name": "zoznam 2",
+      "order": 1,
+      "id": 58504409267,
+      "created": "2021-11-16"
+    }
+  ],
+  "users": []
+}

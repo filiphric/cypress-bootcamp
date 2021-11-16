@@ -1,0 +1,34 @@
+{
+  "boards": [
+    {
+      "name": "new board",
+      "user": 0,
+      "id": 81987167479,
+      "starred": false,
+      "created": "2021-11-16"
+    }
+  ],
+  "cards": [
+    {
+      "order": 0,
+      "boardId": 81987167479,
+      "listId": 47584452074,
+      "name": "karta",
+      "id": 5496622958,
+      "created": "2021-11-16",
+      "deadline": "2021-11-19",
+      "description": "",
+      "completed": false
+    }
+  ],
+  "lists": [
+    {
+      "boardId": 81987167479,
+      "name": "zoznam",
+      "order": 0,
+      "id": 47584452074,
+      "created": "2021-11-16"
+    }
+  ],
+  "users": []
+}

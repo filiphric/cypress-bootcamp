@@ -4,9 +4,7 @@
     "coverage": false,
     "version": "local"
   },
-  "ignoreTestFiles": [
-    "*.md",
-    "*.html",
-    "*.json"
+  "testFiles": [
+    "**/zoznamsa.*"
   ]
 }
