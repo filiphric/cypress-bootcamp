@@ -9,7 +9,7 @@ beforeEach( () => {
 
 it('vytvorenie zoznamu', () => {
 
-  // úloha #1: vytvor si v teste nový zoznam v zozname a odsleduj si request, ktorý sa udeje pri jeho vytvorení.
+  // úloha #1: vytvor si v teste nový zoznam v boarde a odsleduj si request, ktorý sa udeje pri jeho vytvorení.
 
 })
 
