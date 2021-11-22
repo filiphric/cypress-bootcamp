@@ -1,6 +1,6 @@
 const fs = require('fs')
 const path = require('path')
-const dbPath = path.resolve('./trelloapp/public/data/data.json')
+const dbPath = path.resolve('./trelloapp/backend/data/database.json')
 
 const empty = {
   "boards": [],
