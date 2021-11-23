@@ -9,7 +9,7 @@ it('chybová hláška pri vytvorení listu', () => {
     .intercept('POST', '/api/lists', {
       forceNetworkError: true
     })
-    .as('boardCreate')
+    .as('listCreate')
 
   cy
     .visit('/'); // doplň ID boardu
